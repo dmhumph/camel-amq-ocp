@@ -27,7 +27,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="              http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd              http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
     <bean class="com.demo.karafcameldemo.OrderGenerator" id="orderGenerator"/>
     <bean class="org.apache.activemq.camel.component.ActiveMQComponent" id="activemq">
-        <property name="brokerURL" value="tcp://broker-amq-tcp.amq-demo.svc.cluster.local:61616"/>
+        <property name="brokerURL" value="tcp://broker-amq-tcp.amqdemo.svc.cluster.local:61616"/>
         <property name="userName" value="demo"/>
         <property name="password" value="password"/>
     </bean>
